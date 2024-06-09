@@ -80,3 +80,7 @@ for_each = var.vm-details
 
 
 }
+
+output "VMIP" {
+  value = azurerm_windows_virtual_machine.VM.private_ip_address
+}
